@@ -2,21 +2,14 @@
 	import '../app.css';
 	import { onHydrated } from '$lib';
 	import { onMount } from 'svelte';
+	import Navbar from '../lib/components/Navbar/Navbar.svelte';
 
 	onMount(() => onHydrated());
 </script>
 
-<!-- <nav>
-	<a href="/">home</a>
-	<a href="/about">about</a>
-	<a href='/playground'>playground</a>
-</nav> -->
+<Navbar />
 
 <slot />
-
-<footer>
-	<!-- Footer example -->
-</footer>
 
 <style lang="postcss">
 	/* :global(html) {

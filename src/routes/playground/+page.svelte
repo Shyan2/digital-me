@@ -44,7 +44,7 @@
 		<li class="bg-white-p2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 4</li>
 	</ul>
 
-	<div class="card">
+	<div class="m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
 		<h3 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">This is a text element</h3>
 		<p class="mt-2 text-sm text-slate-900 dark:text-blue-100">this is an even longer p tag element</p>
 		<button

@@ -14,6 +14,7 @@ const updateLocalStorage = (value) => {
 export const theme = writable(false);
 
 export const toggleTheme = (value) => {
+  console.log('topggling theme!')
   return theme.update((it) => {
     const newValue = (typeof value === 'boolean') ? value : !it;
 
