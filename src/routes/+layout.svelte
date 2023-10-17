@@ -1,24 +1,25 @@
 <script>
-	import "../app.css"
+	import '../app.css';
+	import { onHydrated } from '$lib';
+	import { onMount } from 'svelte';
+
+	onMount(() => onHydrated());
 </script>
 
-<nav>
+<!-- <nav>
 	<a href="/">home</a>
 	<a href="/about">about</a>
 	<a href='/playground'>playground</a>
-</nav>
-
+</nav> -->
 
 <slot />
 
 <footer>
-	Footer example
+	<!-- Footer example -->
 </footer>
 
-
 <style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-
+	/* :global(html) {
+		background-color: theme(colors.gray.100);
+	} */
 </style>

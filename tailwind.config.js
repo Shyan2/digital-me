@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  darkMode: "class",
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        chestnut: '#973F29'
+      }
+    }
   },
   plugins: []
 };

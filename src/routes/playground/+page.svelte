@@ -1,60 +1,59 @@
-<!--
-  Welcome to Tailwind Play, the official Tailwind CSS playground!
+<script>
+	import { toggleTheme } from '$lib';
+</script>
 
-  Everything here works just like it does when you're running Tailwind locally
-  with a real build pipeline. You can customize your config file, use features
-  like `@apply`, or even add third-party plugins.
+<main class="p-5">
+	<h1 class="text-center text-lg text-green-400">Hello World</h1>
 
-  Feel free to play with this example if you're just learning, or trash it and
-  start from scratch if you know enough to be dangerous. Have fun!
--->
-<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-  <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
-  <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-  <div class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
-    <div class="mx-auto max-w-md">
-      <img src="/img/logo.svg" class="h-6" alt="Tailwind Play" />
-      <div class="divide-y divide-gray-300/50">
-        <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
-          <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
-          <ul class="space-y-4">
-            <li class="flex items-center">
-              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="11" />
-                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-              </svg>
-              <p class="ml-4">
-                Customizing your
-                <code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
-              </p>
-            </li>
-            <li class="flex items-center">
-              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="11" />
-                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-              </svg>
-              <p class="ml-4">
-                Extracting classes with
-                <code class="text-sm font-bold text-gray-900">@apply</code>
-              </p>
-            </li>
-            <li class="flex items-center">
-              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="11" />
-                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-              </svg>
-              <p class="ml-4">Code completion with instant preview</p>
-            </li>
-          </ul>
-          <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
-        </div>
-        <div class="pt-8 text-base font-semibold leading-7">
-          <p class="text-gray-900">Want to dig deeper into Tailwind?</p>
-          <p>
-            <a href="https://tailwindcss.com/docs" class="text-sky-500 hover:text-sky-600">Read the docs &rarr;</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="w-full h-10 bg-violet-200 border-violet-600 border-2 rounded-md my-4 p-2">
+		<p class="text-center font-mono font-extrabold">A div</p>
+	</div>
+
+	<!-- layout -->
+	<div class="fixed w-10 h-10 bg-red-500 top-0" />
+
+	<div class="flex justify-between">
+		<div class="h-16 w-16 rounded-full bg-blue-500" />
+		<div class="h-16 w-16 rounded-full bg-blue-500" />
+		<div class="h-16 w-16 rounded-full bg-blue-500" />
+	</div>
+	<div class="grid grid-cols-3 gap-2 mt-3">
+		<div class="bg-violet-500 h-12" />
+		<div class="bg-violet-500 h-12" />
+		<div class="bg-violet-500 h-12" />
+	</div>
+
+	<div class="md:block hidden">
+		<p>I will appear at > 768px</p>
+	</div>
+
+	<div class="max-md:block hidden">
+		<p>I will appear at &lt; 768px</p>
+	</div>
+
+	<button
+		class="my-2 rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-800"
+		>Click Me
+	</button>
+
+	<ul class="my-2 space-y-2">
+		<li class="bg-white-p2 first:bg-yellow-100">Item 1</li>
+		<li class="bg-white-p2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 1</li>
+		<li class="bg-white-p2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 2</li>
+		<li class="bg-white-p2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 3</li>
+		<li class="bg-white-p2 first:bg-yellow-100 odd:bg-blue-200 even:bg-green-200">Item 4</li>
+	</ul>
+
+	<div class="card">
+		<h3 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">This is a text element</h3>
+		<p class="mt-2 text-sm text-slate-900 dark:text-blue-100">this is an even longer p tag element</p>
+		<button
+			id="toggleDark"
+			class="text-blue-900 px-4 py-2 text-sm font-medium mt-8 bg-blue-100 rounded-md"
+			on:click={toggleTheme}
+			>Toggle Dark mode
+		</button>
+	</div>
+
+	<p class="text-2xl text-chestnut bg-stone-100 p-[16px]">Chestnut Color</p>
+</main>
