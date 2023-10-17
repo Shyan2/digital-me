@@ -3,6 +3,10 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   darkMode: "class",
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+    },
     extend: {
       fontSize: {
         xs: ['12px', '16px'],
@@ -29,10 +33,6 @@ export default {
         },
         boxShadow: {
           '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
-        },
-        backgroundImage: {
-          'hero': "url('assets/images/collection-background.svg')",
-          'card': "url('assets/images/thumbnail-background.svg')",
         },
         screens: {
           "wide": "1440px"

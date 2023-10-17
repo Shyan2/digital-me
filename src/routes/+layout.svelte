@@ -9,10 +9,12 @@
 
 <Navbar />
 
-<slot />
+<main class="container">
+	<slot />
+</main>
 
 <style lang="postcss">
-	/* :global(html) {
+	:global(html) {
 		background-color: theme(colors.gray.100);
-	} */
+	}
 </style>
