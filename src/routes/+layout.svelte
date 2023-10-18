@@ -9,12 +9,6 @@
 
 <Navbar />
 
-<main class="container">
+<main class="container max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 bg-blue-100 dark:bg-blue-300">
 	<slot />
 </main>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>

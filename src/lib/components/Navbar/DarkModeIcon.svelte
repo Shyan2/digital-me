@@ -8,6 +8,6 @@
 </script>
 
 <!-- Use the provided icon or a default placeholder if icon is not found -->
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" height="24px" width="24px">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" height="20px" width="20px">
 	<path d={icons[icon]} />
 </svg>

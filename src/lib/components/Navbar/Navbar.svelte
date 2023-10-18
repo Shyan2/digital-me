@@ -7,12 +7,12 @@
 	$: isCurrentPage = (path) => $page.url.pathname === path;
 </script>
 
-<nav class="bg-gray-800 p-4 dark:bg-black fixed top-0 left-0 w-full">
-	<div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 flex justify-between items-center">
+<nav class="bg-gray-800 p-2 dark:bg-black fixed top-0 left-0 w-full">
+	<div class="mx-auto max-w-4xl sm:px-6 lg:px-8 flex justify-between items-center">
 		<!-- Logo -->
 		<div class="flex-shrink-0">
 			<img
-				class="h-8 w-auto"
+				class="h-6 w-auto"
 				src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
 				alt="Your Company"
 			/>
@@ -21,12 +21,13 @@
 		<ul class="list-none flex space-x-4">
 			<li><NavLink href="/" isActive={isCurrentPage('/')}>Home</NavLink></li>
 			<li><NavLink href="/about" isActive={isCurrentPage('/about')}>About</NavLink></li>
+			<li><NavLink href="/contact" isActive={isCurrentPage('/contact')}>Contact</NavLink></li>
 			<li><NavLink href="/playground" isActive={isCurrentPage('/playground')}>Playground</NavLink></li>
 		</ul>
 		<!-- Dark mode icon-->
 		<button
 			id="toggleDark"
-			class="text-blue-900 px-4 py-2 text-sm font-medium bg-blue-100 rounded-md"
+			class="text-blue-900 text-sm font-medium bg-blue-100 rounded-md"
 			style="background: transparent; border: none;"
 			on:click={toggleTheme}
 			>{#if $theme}
@@ -39,7 +40,7 @@
 </nav>
 
 <!-- Main content -->
-<div class="pt-20">
-	<!-- padding equivalent to the navbar height -->
+<div class="pt-12 sm:pt-12 lg:pt-16">
+	<!-- padding to prevent items going under the navbar -->
 	<slot />
 </div>
