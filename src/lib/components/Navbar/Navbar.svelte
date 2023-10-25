@@ -21,9 +21,9 @@
 		<ul class="list-none flex space-x-4">
 			<li><NavLink href="/" isActive={isCurrentPage('/')}>Home</NavLink></li>
 			<li><NavLink href="/about" isActive={isCurrentPage('/about')}>About</NavLink></li>
-			<li><NavLink href="/blog" isActive={isCurrentPage('/blog')}>Blog</NavLink></li>
+			<!-- <li><NavLink href="/blog" isActive={isCurrentPage('/blog')}>Blog</NavLink></li> -->
 			<li><NavLink href="/contact" isActive={isCurrentPage('/contact')}>Contact</NavLink></li>
-			<li><NavLink href="/playground" isActive={isCurrentPage('/playground')}>Playground</NavLink></li>
+			<!-- <li><NavLink href="/playground" isActive={isCurrentPage('/playground')}>Playground</NavLink></li> -->
 		</ul>
 		<!-- Dark mode icon-->
 		<button
@@ -41,7 +41,7 @@
 </nav>
 
 <!-- Main content -->
-<div class="pt-12 sm:pt-12 lg:pt-16">
+<div class="pt-10 sm:pt-10 lg:pt-10">
 	<!-- padding to prevent items going under the navbar -->
 	<slot />
 </div>
