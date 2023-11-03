@@ -25,24 +25,38 @@ export default {
         '4xl': ['48px', '58px'],
         '8xl': ['96px', '106px']
       },
-      extend: {
-        fontFamily: {
-          palanquin: ['Palanquin', 'sans-serif'],
-          montserrat: ['Montserrat', 'sans-serif'],
-        },
-        colors: {
-          'primary': "#ECEEFF",
-          "coral-red": "#FF6452",
-          "slate-gray": "#6D6D6D",
-          "pale-blue": "#F5F6FF",
-          "white-400": "rgba(255, 255, 255, 0.80)"
-        },
-        boxShadow: {
-          '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
-        },
-        screens: {
-          "wide": "1440px"
-        }
+      fontFamily: {
+        palanquin: ['Palanquin', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        // Background colors
+        'dark-background': '#43464B',
+        'light-background': '#FAF3E0',
+        'navbar-light': '#FAF3E0',
+        'navbar-dark': '#43464B',
+
+        // Font colors
+        'light-primary': '#333333', // Dark text for light background
+        'light-secondary': '#555555', // Darker text for light background
+
+        // Text colors for dark backgrounds
+        'dark-primary': '#FAF3E0', // Light text for dark background
+        'dark-secondary': '#C2C2C2',
+
+        // Hover colors
+        'light-hover': '#eeeeee', // Lighter grey for hover on light background
+        'dark-hover': '#3a3d41', // Darker grey for hover on dark background
+
+        // Accent colors for hover effects
+        'light-accent': '#ffd700', // Gold/yellow for a standout hover on light theme
+        'dark-accent': '#ffc107',
+      },
+      boxShadow: {
+        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
+      },
+      screens: {
+        "wide": "1440px"
       },
     }
   },

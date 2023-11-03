@@ -9,6 +9,6 @@
 
 <Navbar />
 
-<main class="container max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 bg-blue-100 dark:bg-blue-300">
+<main class="container max-w-4xl mx-auto px-2 mt-5 sm:px-6 lg:px-8">
 	<slot />
 </main>

@@ -5,8 +5,8 @@
 
 <a
 	{href}
-	class={`no-underline text-white py-2 px-4 rounded transition ease-in hover:bg-gray-700 focus:outline-none focus:bg-gray-700 ${
-		isActive ? 'bg-gray-700' : ''
+	class={`no-underline  dark:text-dark-primary py-2 px-4 rounded transition ease-in hover:bg-dark-background hover:text-dark-primary dark:hover:bg-light-background dark:hover:text-light-primary focus:outline-none focus:bg-dark-background ${
+		isActive ? 'bg-dark-background text-dark-primary dark:bg-light-background dark:text-light-primary' : ''
 	}`}
 >
 	<slot />
