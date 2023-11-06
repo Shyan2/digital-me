@@ -52,12 +52,6 @@ export default {
         'light-accent': '#ffd700', // Gold/yellow for a standout hover on light theme
         'dark-accent': '#ffc107',
       },
-      boxShadow: {
-        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
-      },
-      screens: {
-        "wide": "1440px"
-      },
     }
   },
   plugins: []

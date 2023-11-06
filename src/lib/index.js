@@ -1,4 +1,3 @@
-// place files you want to import through the `$lib` alias in this folder.
 import { writable } from 'svelte/store';
 
 const key = '@my-theme';
@@ -14,7 +13,6 @@ const updateLocalStorage = (value) => {
 export const theme = writable(false);
 
 export const toggleTheme = (value) => {
-  console.log('topggling theme!')
   return theme.update((it) => {
     const newValue = (typeof value === 'boolean') ? value : !it;
 
@@ -37,8 +35,8 @@ export const onHydrated = () => {
   if (isBrowser) {
     const fromStore = localStorage.getItem(key);
 
-    if (!fromStore) {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (fromStore === null || fromStore === '') {
+      if (window?.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // dark mode
         toggleTheme(true);
       }
@@ -47,4 +45,3 @@ export const onHydrated = () => {
     }
   }
 };
-

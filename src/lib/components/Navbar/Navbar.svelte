@@ -18,9 +18,7 @@
 			<ul class="list-none flex justify-center space-x-4">
 				<li><NavLink href="/" isActive={isCurrentPage('/')}>Home</NavLink></li>
 				<li><NavLink href="/about" isActive={isCurrentPage('/about')}>About</NavLink></li>
-				<!-- <li><NavLink href="/blog" isActive={isCurrentPage('/blog')}>Blog</NavLink></li> -->
 				<li><NavLink href="/contact" isActive={isCurrentPage('/contact')}>Contact</NavLink></li>
-				<!-- <li><NavLink href="/playground" isActive={isCurrentPage('/playground')}>Playground</NavLink></li> -->
 			</ul>
 		</div>
 
