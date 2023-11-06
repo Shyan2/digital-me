@@ -28,6 +28,7 @@
 		<div class="flex-shrink-0">
 			<button
 				id="toggleDark"
+				aria-label="Toggle Dark Mode"
 				class="text-blue-900 text-sm font-medium bg-blue-100 rounded-md"
 				style="background: transparent; border: none;"
 				on:click={toggleTheme}
